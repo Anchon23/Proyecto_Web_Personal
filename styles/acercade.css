@@ -1,0 +1,34 @@
+/* Estilo para la página "acercade" */
+
+/* Establecer el tamaño de fuente y el color del texto */
+body {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Establecer el ancho máximo del contenido */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilizar el encabezado */
+h1 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilizar los párrafos */
+p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Estilizar las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
