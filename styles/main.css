@@ -1,8 +1,21 @@
+body {
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+}
+
 header {
-    background-color: #fff;
+    background-color: #fff; /* Color de fondo blanco */
     padding: 20px;
     text-align: center;
-    font-size: 28px; /* Aumentar el tamaño de fuente */
-    color: #333; /* Cambiar el color de texto */
-    border-bottom: 2px solid #333; /* Agregar un borde inferior */
+    font-size: 28px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar una sombra al header */
+}
+
+h1 {
+    color: #555; /* Cambiar el color del título del header */
+}
+
+p {
+    color: #777; /* Cambiar el color del texto del contenido */
 }
