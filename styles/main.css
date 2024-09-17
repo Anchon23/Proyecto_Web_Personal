@@ -24,7 +24,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 /* Navigation */
@@ -62,11 +62,31 @@ nav ul li a:hover {
 main {
     padding: 40px;
     background-color: #fff;
-    min-height: 70vh; /* Ocupa al menos el 70% de la altura de la pantalla */
+    min-height: 70vh;
     max-width: 1200px;
     margin: 20px auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+/* Centrar la imagen dentro de la clase "foto" */
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.foto h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.foto img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
