@@ -60,33 +60,79 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding: 40px;
-    background-color: #fff;
-    min-height: 70vh;
-    max-width: 1200px;
-    margin: 20px auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Centrar la imagen dentro de la clase "foto" */
-.foto {
+    padding: 60px;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #83858f 0%, #2c3e50 100%);
+    color: #ecf0f1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+main h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    color: #f1c40f;
+}
+
+/* New section: Decorative elements */
+main::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+    animation: float 6s ease-in-out infinite;
+}
+
+main::after {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Stylish quote or text */
+main p {
+    font-size: 1.8rem;
     margin-top: 20px;
-}
-
-.foto h2 {
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-
-.foto img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    color: #ecf0f1;
+    font-style: italic;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
@@ -120,15 +166,15 @@ footer ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
     main {
-        padding: 20px;
+        padding: 40px;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    main p {
+        font-size: 1.5rem;
     }
 }
