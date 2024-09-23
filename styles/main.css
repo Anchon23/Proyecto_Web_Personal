@@ -71,7 +71,7 @@ nav ul li a:hover {
 main {
     padding: 60px;
     min-height: 80vh;
-    background: linear-gradient(135deg, #babac4 0%, #2c3e50 100%);
+    background: linear-gradient(135deg, #b9b9c4 0%, #2c3e50 100%);
     color: #ecf0f1;
     display: flex;
     flex-direction: column;
@@ -82,15 +82,18 @@ main {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Title Styling */
-main h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: #f1c40f;
+
+/* Cambiar el título de "Mi Blog" usando la fuente Teko */
+.teko-title {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Puedes usar 300, 400, 500, 600 o 700 */
+    font-size: 4rem; /* Ajusta el tamaño del título según lo necesites */
+    color: #f1c40f; /* Puedes cambiar el color si quieres */
+    text-align: center;
+    margin-top: 20px;
 }
+
 
 /* New section: Decorative elements */
 main::before {
