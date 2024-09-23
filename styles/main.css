@@ -71,7 +71,7 @@ nav ul li a:hover {
 main {
     padding: 60px;
     min-height: 80vh;
-    background: linear-gradient(135deg, #83858f 0%, #2c3e50 100%);
+    background: linear-gradient(135deg, #babac4 0%, #2c3e50 100%);
     color: #ecf0f1;
     display: flex;
     flex-direction: column;
